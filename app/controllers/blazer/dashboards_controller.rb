@@ -84,6 +84,7 @@ module Blazer
         else
           [2, 4]
         end
+      @rows = params[:rows].to_i if params[:rows]
 
       @refresh = (params[:refresh] || 30.minutes).to_i
     end
